@@ -81,7 +81,7 @@ TEST(test5, text_generation) {
     std::ifstream fexpected;
     fexpected.open("test_expected.txt");
     //bool is_equal = false;
-    //std::string expected;
+    std::string expected;
     //while (getline(fexpected, expected) && !is_equal) {
     //    is_equal = expected == result;
     //}

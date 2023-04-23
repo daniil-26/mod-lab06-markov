@@ -1,5 +1,4 @@
 // Copyright 2021 GHA Test Team
-#pragma once
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -8,7 +7,7 @@
 #include <vector>
 #include <cstdlib>
 #include <ctime>
-
+//
 
 typedef std::deque<std::string> prefix;
 typedef std::map<prefix, std::vector<std::string>> tab;

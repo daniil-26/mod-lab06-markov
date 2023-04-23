@@ -80,12 +80,14 @@ TEST(test5, text_generation) {
 
     std::ifstream fexpected;
     fexpected.open("test_expected.txt");
-    bool is_equal = false;
-    std::string expected;
-    while (getline(fexpected, expected) && !is_equal) {
-        is_equal = expected == result;
-    }
+    //bool is_equal = false;
+    //std::string expected;
+    //while (getline(fexpected, expected) && !is_equal) {
+    //    is_equal = expected == result;
+    //}
+    getline(fexpected, expected);
     fexpected.close();
 
-    EXPECT_TRUE(is_equal);
+    //EXPECT_TRUE(is_equal);
+    EXPECT_EQ(expected, result);
 }

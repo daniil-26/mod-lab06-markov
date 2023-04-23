@@ -6,6 +6,8 @@
 #include <deque>
 #include <map>
 #include <vector>
+#include <cstdlib>
+#include <ctime>
 #include <algorithm>
 #include <random>
 
@@ -16,9 +18,8 @@ typedef std::map<prefix, std::vector<std::string>> tab;
 
 template <typename T>
 T random_element(std::vector<T> v) {
-    random_device rd;
-    mt19937 gen(rd());
-    return v[gen() % v.size()];
+    srand(time(0));
+    return v[rand() % v.size()];
 }
 
 prefix create_prefix(std::ifstream& file, int npref) {

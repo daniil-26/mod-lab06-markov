@@ -9,7 +9,7 @@
 #include <cstdlib>
 #include <ctime>
 #include "textgen.h"
-/
+
 
 typedef std::deque<std::string> prefix;
 typedef std::map<prefix, std::vector<std::string>> tab;

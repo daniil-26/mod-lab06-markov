@@ -1,5 +1,4 @@
 // Copyright 2021 GHA Test Team
-#pragma once
 #include <gtest/gtest.h>
 #include <iostream>
 #include <fstream>
@@ -10,7 +9,7 @@
 #include <cstdlib>
 #include <ctime>
 #include "textgen.h"
-
+//
 
 typedef std::deque<std::string> prefix;
 typedef std::map<prefix, std::vector<std::string>> tab;

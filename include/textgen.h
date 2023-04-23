@@ -1,7 +1,5 @@
 // Copyright 2021 GHA Test Team
-
-#ifndef INCLUDE_TEXTGEN_H_
-
+#pragma once
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -27,5 +25,3 @@ void create_note(tab* statetab, prefix key, std::string word);
 tab create_tab(std::string fname, int npref);
 
 void generate(std::string fname, tab statetab, int maxgen, int npref);
-
-#endif

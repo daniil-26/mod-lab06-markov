@@ -89,5 +89,5 @@ TEST(test5, text_generation) {
     }
     fexpected.close();
 
-    EXPECT_TRUE(true);
+    EXPECT_TRUE(is_equal);
 }

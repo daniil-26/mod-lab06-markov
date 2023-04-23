@@ -14,7 +14,7 @@ typedef std::map<prefix, std::vector<std::string>> tab;
 
 
 template <typename T>
-T random_element(vector<T> v) {
+T random_element(std::vector<T> v) {
     random_device rd;
     mt19937 gen(rd());
     return v[gen() % v.size()];

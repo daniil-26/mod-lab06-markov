@@ -9,8 +9,6 @@
 #include <vector>
 #include <cstdlib>
 #include <ctime>
-#include <algorithm>
-#include <random>
 #include "textgen.h"
 
 

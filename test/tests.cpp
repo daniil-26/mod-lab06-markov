@@ -68,8 +68,6 @@ TEST(test5, text_generation) {
     const int NPREF = 2;
     const int MAXGEN = 5;
     tab statetab = {
-        { { "word1", "word2" }, { "word1" } },
-        { { "word2", "word1" }, { "word2", "word1" } },
         { { "word1", "word1" }, { "word1" } }
     };
     generate("test_result.txt", statetab, MAXGEN, NPREF);

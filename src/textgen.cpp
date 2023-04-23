@@ -1,7 +1,5 @@
 // Copyright 2021 GHA Test Team
 #ifndef INCLUDE_TEXTGEN_H_
-#define INCLUDE_TEXTGEN_H_
-
 #include <iostream>
 #include <fstream>
 #include <string>

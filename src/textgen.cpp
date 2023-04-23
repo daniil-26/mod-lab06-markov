@@ -30,11 +30,11 @@ prefix create_prefix(std::ifstream& file, int npref) {
     return key;
 }
 
-void create_note(tab& statetab, prefix key, std::string word) {
-    if (statetab.count(key))
-        statetab[key].push_back(word);
+void create_note(tab* statetab, prefix key, std::string word) {
+    if ((*statetab).count(key))
+        (*statetab)[key].push_back(word);
     else
-        statetab.insert({ key, { word } });
+        (*statetab).insert({ key, { word } });
 }
 
 
@@ -47,7 +47,7 @@ tab create_tab(std::string fname, int npref) {
     file.open(fname);
     key = create_prefix(file, npref);
     while (file >> word) {
-        create_note(statetab, key, word);
+        create_note(&statetab, key, word);
         key.pop_front();
         key.push_back(word);
     }
@@ -75,8 +75,7 @@ void generate(std::string fname, tab statetab, int maxgen, int npref) {
             file << word << " ";
             key.pop_front();
             key.push_back(word);
-        }
-        else
+        } else
             return;
     }
 

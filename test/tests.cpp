@@ -83,7 +83,7 @@ TEST(test5, text_generation) {
     bool is_equal = false;
     std::string expected;
     while (getline(fexpected, expected) && !is_equal) {
-        std::erase(expected, '\r');
+        expected.pop_back();
         is_equal = expected == result;
     }
     getline(fexpected, expected);

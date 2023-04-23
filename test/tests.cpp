@@ -1,4 +1,5 @@
 // Copyright 2021 GHA Test Team
+#pragma once
 #include <gtest/gtest.h>
 #include <iostream>
 #include <fstream>

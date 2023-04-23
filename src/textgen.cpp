@@ -75,8 +75,7 @@ void generate(std::string fname, tab statetab, int maxgen, int npref) {
             file << word << " ";
             key.pop_front();
             key.push_back(word);
-        }
-        else {
+        } else {
             return;
         }
     }

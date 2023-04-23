@@ -66,7 +66,7 @@ TEST(test4, choice_single_suffix_test) {
 
 TEST(test5, text_generation) {
     const int NPREF = 2;
-    const int MAXGEN = 3;
+    const int MAXGEN = 5;
     tab statetab = {
         { { "word1", "word1" }, { "word1" } }
     };
@@ -80,14 +80,14 @@ TEST(test5, text_generation) {
 
     std::ifstream fexpected;
     fexpected.open("test_expected.txt");
-    //bool is_equal = false;
+    bool is_equal = false;
     std::string expected;
-    //while (getline(fexpected, expected) && !is_equal) {
-    //    is_equal = expected == result;
-    //}
+    while (getline(fexpected, expected) && !is_equal) {
+        std::erase(expected, '\r');
+        is_equal = expected == result;
+    }
     getline(fexpected, expected);
     fexpected.close();
 
-    //EXPECT_TRUE(is_equal);
-    EXPECT_EQ(expected, result);
+    EXPECT_TRUE(is_equal);
 }

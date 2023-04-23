@@ -66,7 +66,7 @@ TEST(test4, choice_single_suffix_test) {
 
 TEST(test5, text_generation) {
     const int NPREF = 2;
-    const int MAXGEN = 5;
+    const int MAXGEN = 3;
     tab statetab = {
         { { "word1", "word1" }, { "word1" } }
     };

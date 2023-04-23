@@ -1,5 +1,4 @@
 // Copyright 2021 GHA Test Team
-INCLUDE_TEXTGEN_H_
 #include <iostream>
 #include <fstream>
 #include <string>

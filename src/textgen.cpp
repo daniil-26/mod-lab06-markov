@@ -7,11 +7,17 @@
 #include <vector>
 #include <cstdlib>
 #include <ctime>
-
+//
 
 typedef std::deque<std::string> prefix;
 typedef std::map<prefix, std::vector<std::string>> tab;
 
+
+template <typename T>
+T random_element(std::vector<T> v) {
+    srand(time(0));
+    return v[rand() % v.size()];
+}
 
 prefix create_prefix(std::ifstream& file, int npref) {
     prefix key;

@@ -1,5 +1,4 @@
 // Copyright 2021 GHA Test Team
-#ifndef INCLUDE_TEXTGEN_H_
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -83,5 +82,3 @@ void generate(std::string fname, tab statetab, int maxgen, int npref) {
 
     file.close();
 }
-
-#endif

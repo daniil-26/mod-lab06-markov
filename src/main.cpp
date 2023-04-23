@@ -7,8 +7,6 @@
 #include <map>
 #include <vector>
 #include <cstdlib>
-#include <ctime>
-#include <algorithm>
 #include "textgen.h"
 
 

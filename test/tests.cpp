@@ -8,7 +8,7 @@
 #include <vector>
 #include <algorithm>
 #include <random>
-#include "textgen.cpp"
+#include "textgen.h"
 
 
 typedef std::deque<std::string> prefix;

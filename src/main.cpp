@@ -1,3 +1,4 @@
+// Copyright 2021 GHA Test Team
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -7,14 +8,12 @@
 #include <algorithm>
 #include "textgen.h"
 
-using namespace std;
 
-typedef deque<string> prefix;
-typedef map<prefix, vector<string>> tab;
+typedef std::deque<std::string> prefix;
+typedef std::map<prefix, std::vector<std::string>> tab;
 
 
-int main()
-{
+int main() {
     const int NPREF = 2;
     const int MAXGEN = 1000;
 

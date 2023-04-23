@@ -8,8 +8,6 @@
 #include <vector>
 #include <cstdlib>
 #include <ctime>
-#include <algorithm>
-#include <random>
 
 
 typedef std::deque<std::string> prefix;

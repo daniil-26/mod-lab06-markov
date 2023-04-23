@@ -13,6 +13,6 @@ typedef std::deque<std::string> prefix;
 typedef std::map<prefix, std::vector<std::string>> tab;
 
 
-tab create_tab(std::string fname, const int npref);
+tab create_tab(std::string fname, int npref);
 
-void generate(std::string fname, tab statetab, const int maxgen, const int npref);
+void generate(std::string fname, tab statetab, int maxgen, int npref);
